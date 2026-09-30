@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Seatwork 1</title>
+    <style>
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-image: url('https://t4.ftcdn.net/jpg/08/21/96/43/360_F_821964364_v5QYNd8ZpbdVIOlzjI8rO8cLkisqbii6.jpg');
+            background-size: cover;
+            
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            color: #FFFFFF;
+            background-color: #0b3d2e;
+        }
+        span{
+            font-weight: bold;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+        dd{
+            font-size: 19px;
+            color:white;
+            
+        }
+        ol{
+            text-align: center;
+            list-style-position: inside;
+        }
+        p{
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            font-size: 20px;
+        }
+        a{
+            color: lightgreen;
+        }
+        h3{
+            text-align: center;
+            color: black;
+            background-color: white;
+        }
+        h4{
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+        .artists{
+            display:flex;
+            gap:30px;
+            list-style: none;
+            padding: 70px;
+            counter-reset: artist;
+            margin: 0;
+        }
+        .artists li{
+            counter-increment:artist;
+            width:250px;
+            display:flex;
+            flex-direction: column;   
+            align-items: center;        
+            row-gap: 5px;
+            font-size: 20px;
+            text-align: center;
+            list-style: none;
+        }  
+        .artists li img{
+            display: block;
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            margin: 0 auto 10px;
+        }
+        .artists li span{
+            white-space: nowrap;
+            font-size: 23px;
+            display: block;
+            text-align: center;
+        }
+        .artists li span::before{
+            content: counter(artist) ".";
+        }
+        .artists li dd{
+            margin: 5px 0 0;
+            font-size: 19px;
+            text-align: center;
+        }
+        .john{
+            padding:15px;
+            margin: 25px;
+            max-width:650px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            background-color: #172554;
+        }
+    .alex{
+        padding:15px;
+            margin: 25px;
+            max-width:650px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            background-color: #4A1728;
+    }
+    .adele{
+        padding:15px;
+            margin: 25px;
+            max-width:650px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            background-color: #2E1A47;
+    }
+    .songs{
+            display:flex;
+            gap:30px;
+            list-style: none;
+            padding: 70px;
+            counter-reset: artist;
+            margin: 0;
+        }
+        .songs li{
+            counter-increment:artist;
+            width:250px;
+            display:flex;
+            flex-direction: column;   
+            align-items: center;        
+            row-gap: 1px;
+            font-size: 20px;
+            text-align: center;
+            list-style: none;
+        }  
+        .songs li img{
+            display: block;
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            margin: 0 auto 10px;
+        }
+        .songs li span{
+            white-space: nowrap;
+            font-size: 23px;
+            display: block;
+            text-align: center;
+        }
+        .songs li span::before{
+            content: counter(artist) ".";
+        }
+        .songs li dd{
+            margin: 5px 0 0;
+            font-size: 19px;
+            text-align: center;
+        }
+        .sfr{
+            padding:15px;
+            margin: 25px;
+            max-width:650px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            background-color: #B83A2F;
+        }
+        .fy{
+        padding:15px;
+            margin: 25px;
+            max-width:650px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            background-color: #6B8FC9;
+        }
+        .amd{
+        padding:15px;
+            margin: 25px;
+            max-width:650px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            background-color: #cdae3e;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <br>
+    <h1>My Top 3 Spotify Artists</h1>
+    </header>
+    <section>
+        <ol class="artists">
+            <li class="john">
+                <img src="https://i.scdn.co/image/ab6761610000e5eb2af434c316269d52e31b59c3" alt="">
+                <div class="title">
+                    <span>John Michael Howell</span>
+                </div>
+                <dd>I like this artist because of his emotionally powerful songwriting. Songs such as “Story of a Warrior” and “Missing Piece” make listeners like me feel as though we are experiencing the soundtrack of a movie—each song telling a story and evoking vivid emotions.</dd>
+            </li>
+            <li class="alex">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtuf7EoHq3rASfb48hRU97_fzl7GxsdN58sjJN5CTwWA&s" alt="">
+                <div class="title">
+                    <span>Alex Warren</span>
+                </div>
+                <dd>I really enjoy listening to Alex Warren because songs such as “Ordinary” and “Burning Down” showcase a deep sense of vulnerability. Much of his appeal comes from the difficult experiences he has faced, which give his music an authentic and emotional quality.</dd>
+            </li>
+            <li class="adele">
+                <img src="https://static.wikia.nocookie.net/adeles/images/4/44/Adele_%E2%80%93_2021.jpg/revision/latest?cb=20211016233505" alt="">
+                <div class="title">
+                    <span>Adele</span>
+                </div>
+                <dd>Her songs really resonate with me because of her instantly recognizable voice. It is powerful, warm, and slightly raspy, turning songs like “Rolling in the Deep” and “Set Fire to the Rain” into emotional climaxes that leave a lasting impression.</dd>
+            </li>
+        </ol>
+    </section>
+    <header>
+    <br>
+    <h1>My Top 3 Favorite Songs</h1>
+    </header>
+    <section>
+        <ol class="songs">
+            <li class="sfr">
+                <img src="https://images.genius.com/c774990164a4f7583b91ab200a29ff3c.600x600x1.jpg" alt="Set Fire to the Rain">
+                <div class="title">
+                    <span>Set Fire to the Rain</span>
+                    <h4>by Adele</h4>
+                </div>
+                <dd>I love Set Fire to the Rain because Adele’s powerful vocals and emotional lyrics make heartbreak feel intense and relatable to me.</dd>
+                <p>Listen to this song <a href="https://open.spotify.com/" target="_blank">here</a></p>
+            </li>
+            <li class="fy">
+                <img src="https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651" alt="Fix You">
+                <div class="title">
+                    <span>Fix You</span>
+                    <h4>by Coldplay</h4>
+                </div>
+                <dd>I listen to Fix You many times because its gentle melody and emotional lyrics capture the feeling of wanting to comfort someone you care about. Its slow build into a powerful ending makes the song feel hopeful, comforting, and deeply moving.</dd>
+                <p>Listen to this song <a href="https://open.spotify.com/" target="_blank">here</a></p>
+            </li>
+            <li class="amd">
+                <img src="https://images.genius.com/5e2d5be38bb79ebe271d4faaeae80883.1000x1000x1.png" alt="A Million Dreams">
+                <div class="title">
+                    <span>A Million Dreams</span>
+                    <h4>from the Greatest Showman</h4>
+                </div>
+                <dd>I love A Million Dreams because its uplifting lyrics inspire us to dream big and believe in a better future. Its hopeful melody and powerful vocals make it feel magical and motivating.</dd>
+                <p>Listen to this song <a href="https://open.spotify.com/" target="_blank">here</a></p>
+            </li>
+        </ol>
+    </section>
+    <br>
+    <p>For more information about these artists and these songs, click <a href="https://open.spotify.com/" target="_blank">here</a></p>
+    <br>
+    <h3>2026 My Top 3 Artists and Songs|Created by: Krishna Kiyomi Pascua 9-Jade</h3>
+</body>
+</html>
